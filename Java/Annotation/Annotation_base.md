@@ -10,13 +10,12 @@ Java ÓïÑÔÖĞµÄÀà¡¢·½·¨¡¢±äÁ¿¡¢²ÎÊıºÍ°üµÈ¶¼¿ÉÒÔ±»±ê×¢¡£ºÍ Javadoc ²»Í¬£¬Java ±ê×¢¿
 ## ÄÚÖÃµÄ×¢½â
 Java ¶¨ÒåÁËÒ»Ì××¢½â£¬¹²ÓĞ 7 ¸ö£¬3 ¸öÔÚ java.lang ÖĞ£¬Ê£ÏÂ 4 ¸öÔÚ java.lang.annotation ÖĞ¡£
 
-×÷ÓÃÔÚ´úÂëµÄ×¢½âÊÇ
-
+#### ×÷ÓÃÔÚ´úÂëµÄ×¢½âÊÇ
 @Override - ¼ì²é¸Ã·½·¨ÊÇ·ñÊÇÖØĞ´·½·¨¡£Èç¹û·¢ÏÖÆä¸¸Àà£¬»òÕßÊÇÒıÓÃµÄ½Ó¿ÚÖĞ²¢Ã»ÓĞ¸Ã·½·¨Ê±£¬»á±¨±àÒë´íÎó¡£
 @Deprecated - ±ê¼Ç¹ıÊ±·½·¨¡£Èç¹ûÊ¹ÓÃ¸Ã·½·¨£¬»á±¨±àÒë¾¯¸æ¡£
 @SuppressWarnings - Ö¸Ê¾±àÒëÆ÷È¥ºöÂÔ×¢½âÖĞÉùÃ÷µÄ¾¯¸æ¡£
-×÷ÓÃÔÚÆäËû×¢½âµÄ×¢½â(»òÕßËµ Ôª×¢½â)ÊÇ:
 
+#### ×÷ÓÃÔÚÆäËû×¢½âµÄ×¢½â(»òÕßËµ Ôª×¢½â)ÊÇ:
 @Retention - ±êÊ¶Õâ¸ö×¢½âÔõÃ´±£´æ£¬ÊÇÖ»ÔÚ´úÂëÖĞ£¬»¹ÊÇ±àÈëclassÎÄ¼şÖĞ£¬»òÕßÊÇÔÚÔËĞĞÊ±¿ÉÒÔÍ¨¹ı·´Éä·ÃÎÊ¡£
 @Documented - ±ê¼ÇÕâĞ©×¢½âÊÇ·ñ°üº¬ÔÚÓÃ»§ÎÄµµÖĞ¡£
 @Target - ±ê¼ÇÕâ¸ö×¢½âÓ¦¸ÃÊÇÄÄÖÖ Java ³ÉÔ±¡£
@@ -31,25 +30,25 @@ Java ¶¨ÒåÁËÒ»Ì××¢½â£¬¹²ÓĞ 7 ¸ö£¬3 ¸öÔÚ java.lang ÖĞ£¬Ê£ÏÂ 4 ¸öÔÚ java.lang.annot
 
 ´ÓÖĞ£¬ÎÒÃÇ¿ÉÒÔ¿´³ö£º
 
-(01) 1 ¸ö Annotation ºÍ 1 ¸ö RetentionPolicy ¹ØÁª¡£
-
+#### (01) 1 ¸ö Annotation ºÍ 1 ¸ö RetentionPolicy ¹ØÁª¡£
 ¿ÉÒÔÀí½âÎª£ºÃ¿1¸öAnnotation¶ÔÏó£¬¶¼»áÓĞÎ¨Ò»µÄRetentionPolicyÊôĞÔ¡£
-(02) 1 ¸ö Annotation ºÍ 1~n ¸ö ElementType ¹ØÁª¡£
+
+#### (02) 1 ¸ö Annotation ºÍ 1~n ¸ö ElementType ¹ØÁª¡£
 
 ¿ÉÒÔÀí½âÎª£º¶ÔÓÚÃ¿ 1 ¸ö Annotation ¶ÔÏó£¬¿ÉÒÔÓĞÈô¸É¸ö ElementType ÊôĞÔ¡£
 
-(03) Annotation ÓĞĞí¶àÊµÏÖÀà£¬°üÀ¨£ºDeprecated, Documented, Inherited, Override µÈµÈ¡£
+#### (03) Annotation ÓĞĞí¶àÊµÏÖÀà£¬°üÀ¨£ºDeprecated, Documented, Inherited, Override µÈµÈ¡£
 
 Annotation µÄÃ¿Ò»¸öÊµÏÖÀà£¬¶¼ "ºÍ 1 ¸ö RetentionPolicy ¹ØÁª" ²¢ÇÒ " ºÍ 1~n ¸ö ElementType ¹ØÁª"¡£
 
 ÏÂÃæ£¬ÎÒÏÈ½éÉÜ¿ò¼ÜÍ¼µÄ×ó°ë±ß(ÈçÏÂÍ¼)£¬¼´ Annotation, RetentionPolicy, ElementType£»È»ºóÔÚ¾Í Annotation µÄÊµÏÖÀà½øĞĞ¾ÙÀıËµÃ÷¡£
 
 
-
 ### 2¡¢Annotation ×é³É²¿·Ö
 java Annotation µÄ×é³ÉÖĞ£¬ÓĞ 3 ¸ö·Ç³£ÖØÒªµÄÖ÷¸ÉÀà¡£ËüÃÇ·Ö±ğÊÇ£º
 
 Annotation.java
+```
 package java.lang.annotation;
 public interface Annotation {
 
@@ -90,6 +89,7 @@ public enum RetentionPolicy {
 
     RUNTIME            /* ±àÒëÆ÷½«Annotation´æ´¢ÓÚclassÎÄ¼şÖĞ£¬²¢ÇÒ¿ÉÓÉJVM¶ÁÈë */
 }
+```
 ËµÃ÷£º
 
 (01) Annotation ¾ÍÊÇ¸ö½Ó¿Ú¡£
@@ -102,22 +102,27 @@ public enum RetentionPolicy {
 
 (03) RetentionPolicy ÊÇ Enum Ã¶¾ÙÀàĞÍ£¬ËüÓÃÀ´Ö¸¶¨ Annotation µÄ²ßÂÔ¡£Í¨Ë×µãËµ£¬¾ÍÊÇ²»Í¬ RetentionPolicy ÀàĞÍµÄ Annotation µÄ×÷ÓÃÓò²»Í¬¡£
 
-"Ã¿ 1 ¸ö Annotation" ¶¼Óë "1 ¸ö RetentionPolicy" ¹ØÁª¡£
+#### "Ã¿ 1 ¸ö Annotation" ¶¼Óë "1 ¸ö RetentionPolicy" ¹ØÁª¡£
 
 a) Èô Annotation µÄÀàĞÍÎª SOURCE£¬ÔòÒâÎ¶×Å£ºAnnotation ½ö´æÔÚÓÚ±àÒëÆ÷´¦ÀíÆÚ¼ä£¬±àÒëÆ÷´¦ÀíÍêÖ®ºó£¬¸Ã Annotation ¾ÍÃ»ÓÃÁË¡£ ÀıÈç£¬" @Override" ±êÖ¾¾ÍÊÇÒ»¸ö Annotation¡£µ±ËüĞŞÊÎÒ»¸ö·½·¨µÄÊ±ºò£¬¾ÍÒâÎ¶×Å¸Ã·½·¨¸²¸Ç¸¸ÀàµÄ·½·¨£»²¢ÇÒÔÚ±àÒëÆÚ¼ä»á½øĞĞÓï·¨¼ì²é£¡±àÒëÆ÷´¦ÀíÍêºó£¬"@Override" ¾ÍÃ»ÓĞÈÎºÎ×÷ÓÃÁË¡£
+
 b) Èô Annotation µÄÀàĞÍÎª CLASS£¬ÔòÒâÎ¶×Å£º±àÒëÆ÷½« Annotation ´æ´¢ÓÚÀà¶ÔÓ¦µÄ .class ÎÄ¼şÖĞ£¬ËüÊÇ Annotation µÄÄ¬ÈÏĞĞÎª¡£
+
 c) Èô Annotation µÄÀàĞÍÎª RUNTIME£¬ÔòÒâÎ¶×Å£º±àÒëÆ÷½« Annotation ´æ´¢ÓÚ class ÎÄ¼şÖĞ£¬²¢ÇÒ¿ÉÓÉJVM¶ÁÈë¡£
+
 ÕâÊ±£¬Ö»ĞèÒª¼Ç×¡"Ã¿ 1 ¸ö Annotation" ¶¼Óë "1 ¸ö RetentionPolicy" ¹ØÁª£¬²¢ÇÒÓë "1¡«n ¸ö ElementType" ¹ØÁª¡£Ñ§ÍêºóÃæµÄÄÚÈİÖ®ºó£¬ÔÙ»ØÍ·¿´ÕâĞ©ÄÚÈİ£¬»á¸üÈİÒ×Àí½â¡£
 
 ### 3¡¢java ×Ô´øµÄ Annotation
 Àí½âÁËÉÏÃæµÄ 3 ¸öÀàµÄ×÷ÓÃÖ®ºó£¬ÎÒÃÇ½ÓÏÂÀ´¿ÉÒÔ½²½â Annotation ÊµÏÖÀàµÄÓï·¨¶¨ÒåÁË¡£
 
-1£©Annotation Í¨ÓÃ¶¨Òå
+#### 1£©Annotation Í¨ÓÃ¶¨Òå
+```
 @Documented
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MyAnnotation1 {
 }
+```
 ËµÃ÷£º
 
 ÉÏÃæµÄ×÷ÓÃÊÇ¶¨ÒåÒ»¸ö Annotation£¬ËüµÄÃû×ÖÊÇ MyAnnotation1¡£¶¨ÒåÁË MyAnnotation1 Ö®ºó£¬ÎÒÃÇ¿ÉÒÔÔÚ´úÂëÖĞÍ¨¹ı "@MyAnnotation1" À´Ê¹ÓÃËü¡£ ÆäËüµÄ£¬@Documented, @Target, @Retention, @interface ¶¼ÊÇÀ´ĞŞÊÎ MyAnnotation1 µÄ¡£ÏÂÃæ·Ö±ğËµËµËüÃÇµÄº¬Òå£º
@@ -151,7 +156,7 @@ public @interface MyAnnotation1 {
 
 ¶¨Òå Annotation Ê±£¬@Retention ¿ÉÓĞ¿ÉÎŞ¡£ÈôÃ»ÓĞ @Retention£¬ÔòÄ¬ÈÏÊÇ RetentionPolicy.CLASS¡£
 
-2£©java×Ô´øµÄAnnotation
+#### 2£©java×Ô´øµÄAnnotation
 Í¨¹ıÉÏÃæµÄÊ¾Àı£¬ÎÒÃÇÄÜÀí½â£º@interface ÓÃÀ´ÉùÃ÷ Annotation£¬@Documented ÓÃÀ´±íÊ¾¸Ã Annotation ÊÇ·ñ»á³öÏÖÔÚ javadoc ÖĞ£¬ @Target ÓÃÀ´Ö¸¶¨ Annotation µÄÀàĞÍ£¬@Retention ÓÃÀ´Ö¸¶¨ Annotation µÄ²ßÂÔ¡£
 
 Àí½âÕâÒ»µãÖ®ºó£¬ÎÒÃÇ¾ÍºÜÈİÒ×Àí½â java ÖĞ×Ô´øµÄ Annotation µÄÊµÏÖÀà£¬¼´ Annotation ¼Ü¹¹Í¼µÄÓÒ°ë±ß¡£ÈçÏÂÍ¼£º
@@ -169,14 +174,15 @@ public @interface MyAnnotation1 {
 @SuppressWarnings -- @SuppressWarnings Ëù±ê×¢ÄÚÈİ²úÉúµÄ¾¯¸æ£¬±àÒëÆ÷»á¶ÔÕâĞ©¾¯¸æ±£³Ö¾²Ä¬¡£
 ÓÉÓÚ "@Deprecated ºÍ @Override" ÀàËÆ£¬"@Documented, @Inherited, @Retention, @Target" ÀàËÆ£»ÏÂÃæ£¬ÎÒÃÇÖ»¶Ô @Deprecated, @Inherited, @SuppressWarnings Õâ 3 ¸ö Annotation ½øĞĞËµÃ÷¡£
 
-2.1) @Deprecated
+#### 2.1) @Deprecated
 
 @Deprecated µÄ¶¨ÒåÈçÏÂ£º
-
+```
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Deprecated {
 }
+```
 ËµÃ÷£º
 
 (01) @interface -- ËüµÄÓÃÀ´ĞŞÊÎ Deprecated£¬ÒâÎ¶×Å Deprecated ÊµÏÖÁË java.lang.annotation.Annotation ½Ó¿Ú£»¼´ Deprecated ¾ÍÊÇÒ»¸ö×¢½â¡£ (02) @Documented -- ËüµÄ×÷ÓÃÊÇËµÃ÷¸Ã×¢½âÄÜ³öÏÖÔÚ javadoc ÖĞ¡£
@@ -185,7 +191,7 @@ public @interface Deprecated {
 ÀıÈç£¬ÈôÄ³¸ö·½·¨±» @Deprecated ±ê×¢£¬Ôò¸Ã·½·¨²»ÔÙ±»½¨ÒéÊ¹ÓÃ¡£Èç¹ûÓĞ¿ª·¢ÈËÔ±ÊÔÍ¼Ê¹ÓÃ»òÖØĞ´±» @Deprecated ±êÊ¾µÄ·½·¨£¬±àÒëÆ÷»á¸øÏàÓ¦µÄÌáÊ¾ĞÅÏ¢¡£Ê¾ÀıÈçÏÂ:
 
 
-
+```
 DeprecatedTest.java
 import java.util.Date;
 import java.util.Calendar;
@@ -219,6 +225,7 @@ public class DeprecatedTest {
         testCalendar();
     }
 }
+```
 ËµÃ÷£º
 
 ÉÏÃæÊÇ eclipse ÖĞµÄ½ØÍ¼£¬±È½ÏÀàÖĞ "getString1() ºÍ getString2()" ÒÔ¼° "testDate() ºÍ testCalendar()" ¡£
@@ -231,15 +238,16 @@ getString2() Ã»ÓĞ±» @Deprecated ±ê×¢£¬ËüµÄÏÔÊ¾Õı³£¡£
 
 testCalendar() µ÷ÓÃÁË Calendar µÄ API À´²Ù×÷ÈÕÆÚ/Ê±¼ä£¬java ½¨ÒéÓÃ Calendar È¡´ú Date¡£Òò´Ë£¬²Ù×÷ Calendar ²»»á²úÉú warning¡£
 
-2.2) @Inherited
+#### 2.2) @Inherited
 
 @Inherited µÄ¶¨ÒåÈçÏÂ£º
-
+```
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.ANNOTATION_TYPE)
 public @interface Inherited {
 }
+```
 ËµÃ÷£º
 
 (01) @interface -- ËüµÄÓÃÀ´ĞŞÊÎ Inherited£¬ÒâÎ¶×Å Inherited ÊµÏÖÁË java.lang.annotation.Annotation ½Ó¿Ú£»¼´ Inherited ¾ÍÊÇÒ»¸ö×¢½â¡£
@@ -251,7 +259,7 @@ public @interface Inherited {
 MyAnnotation£¬Ôò Base ¾ßÓĞÁË"¾ßÓĞÁË×¢½â MyAnnotation"£»ÏÖÔÚ£¬Sub ¼Ì³ĞÁË Base£¬ÓÉÓÚ MyAnnotation ÊÇ @InheritedµÄ(¾ßÓĞ¼Ì³ĞĞÔ)£¬ËùÒÔ£¬Sub Ò² "¾ßÓĞÁË×¢½â MyAnnotation"¡£
 
 @Inherited µÄÊ¹ÓÃÊ¾Àı:
-
+```
 InheritableSon.java
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
@@ -294,6 +302,7 @@ public class InheritableSon extends InheritableFather
         InheritableSon is = new InheritableSon();
     }
 }
+```
 ÔËĞĞ½á¹û£º
 
 InheritableFather:true
@@ -301,6 +310,7 @@ InheritableSon:true
 ÏÖÔÚ£¬ÎÒÃÇ¶Ô InheritableSon.java ½øĞĞĞŞ¸Ä£º×¢ÊÍµô "Inheritable µÄ @Inherited ×¢½â"¡£
 
 InheritableSon.java
+```
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -342,21 +352,23 @@ public class InheritableSon extends InheritableFather
         InheritableSon is = new InheritableSon();
     }
 }
+```
 ÔËĞĞ½á¹û£º
 
 InheritableFather:true
 InheritableSon:false
 ¶Ô±ÈÉÏÃæµÄÁ½¸ö½á¹û£¬ÎÒÃÇ·¢ÏÖ£ºµ±×¢½â Inheritable ±» @Inherited ±ê×¢Ê±£¬Ëü¾ßÓĞ¼Ì³ĞĞÔ¡£·ñÔò£¬Ã»ÓĞ¼Ì³ĞĞÔ¡£
 
-2.3) @SuppressWarnings
+#### 2.3) @SuppressWarnings
 
 @SuppressWarnings µÄ¶¨ÒåÈçÏÂ£º
-
+```
 @Target({TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE})
 @Retention(RetentionPolicy.SOURCE)
 public @interface SuppressWarnings {
     String[] value();
 }
+```
 ËµÃ÷£º
 
 (01) @interface -- ËüµÄÓÃÀ´ĞŞÊÎ SuppressWarnings£¬ÒâÎ¶×Å SuppressWarnings ÊµÏÖÁË java.lang.annotation.Annotation ½Ó¿Ú£»¼´ SuppressWarnings ¾ÍÊÇÒ»¸ö×¢½â¡£
@@ -380,6 +392,7 @@ LOCAL_VARIABLE ÒâÎ¶×Å£¬ËüÄÜ±ê×¢"¾Ö²¿±äÁ¿"¡£
 
 
 SuppressWarningTest.java
+```
 import java.util.Date;
 
 public class SuppressWarningTest {
@@ -394,6 +407,7 @@ public class SuppressWarningTest {
         doSomething();
     }
 }
+```
 ËµÃ÷£º
 
 (01) ×ó±ßµÄÍ¼ÖĞ£¬Ã»ÓĞÊ¹ÓÃ @SuppressWarnings(value={"deprecation"}) , ¶ø Date ÊôÓÚ java ²»ÔÙ½¨ÒéÊ¹ÓÃµÄÀà¡£Òò´Ë£¬µ÷ÓÃ Date µÄ API Ê±£¬»á²úÉú¾¯¸æ¡£¶øÓÒ±ßµÄÍ¾ÖĞ£¬Ê¹ÓÃÁË @SuppressWarnings(value={"deprecation"})¡£Òò´Ë£¬±àÒëÆ÷¶Ô"µ÷ÓÃ Date µÄ API ²úÉúµÄ¾¯¸æ"±£³Ö³ÁÄ¬¡£
@@ -422,7 +436,7 @@ Annotation ¾ßÓĞ"ÈÃ±àÒëÆ÷½øĞĞ±àÒë¼ì²éµÄ×÷ÓÃ"¡£
 (02) ÈôÄ³¸ö·½·¨±» @Override µÄ±ê×¢£¬ÔòÒâÎ¶×Å¸Ã·½·¨»á¸²¸Ç¸¸ÀàÖĞµÄÍ¬Ãû·½·¨¡£Èç¹ûÓĞ·½·¨±» @Override ±êÊ¾£¬µ«¸¸ÀàÖĞÈ´Ã»ÓĞ"±» @Override ±ê×¢"µÄÍ¬Ãû·½·¨£¬Ôò±àÒëÆ÷»á±¨´í¡£Ê¾ÀıÈçÏÂ£º
 
 
-
+```
 OverrideTest.java
 public class OverrideTest {
 
@@ -447,6 +461,7 @@ public class OverrideTest {
     public static void main(String[] args) {
     }
 }
+```
 ÉÏÃæÊÇ¸Ã³ÌĞòÔÚ eclipse ÖĞµÄ½ØÍ¼¡£´ÓÖĞ£¬ÎÒÃÇ¿ÉÒÔ·¢ÏÖ "getString()" º¯Êı»á±¨´í¡£ÕâÊÇÒòÎª "getString() ±» @Override Ëù±ê×¢£¬µ«ÔÚOverrideTest µÄÈÎºÎ¸¸ÀàÖĞ¶¼Ã»ÓĞ¶¨Òå getString1() º¯Êı"¡£
 
 "½« getString() ÉÏÃæµÄ @Override×¢ÊÍµô"£¬¼´¿É½â¾ö¸Ã´íÎó¡£
@@ -457,6 +472,7 @@ public class OverrideTest {
 ÕâÒ²ÒâÎ¶×Å£¬ÎÒÃÇ¿ÉÒÔÔÚ·´ÉäÖĞ½âÎö²¢Ê¹ÓÃ Annotation¡£
 
 AnnotationTest.java
+```
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
@@ -541,6 +557,7 @@ public class AnnotationTest {
         }
     }
 }
+```
 ÔËĞĞ½á¹û£º
 
 somebody: lily, 18
@@ -551,10 +568,10 @@ empty
 unknown, 
 @com.skywang.annotation.MyAnnotation(value=[unknown])
 @java.lang.Deprecated()
-3) ¸ù¾İ Annotation Éú³É°ïÖúÎÄµµ
+#### 3) ¸ù¾İ Annotation Éú³É°ïÖúÎÄµµ
 Í¨¹ı¸ø Annotation ×¢½â¼ÓÉÏ @Documented ±êÇ©£¬ÄÜÊ¹¸Ã Annotation ±êÇ©³öÏÖÔÚ javadoc ÖĞ¡£
 
-4) ÄÜ¹»°ïÃ¦²é¿´²é¿´´úÂë
+#### 4) ÄÜ¹»°ïÃ¦²é¿´²é¿´´úÂë
 Í¨¹ı @Override, @Deprecated µÈ£¬ÎÒÃÇÄÜºÜ·½±ãµÄÁË½â³ÌĞòµÄ´óÖÂ½á¹¹¡£
 
 ÁíÍâ£¬ÎÒÃÇÒ²¿ÉÒÔÍ¨¹ı×Ô¶¨Òå Annotation À´ÊµÏÖÒ»Ğ©¹¦ÄÜ¡£
